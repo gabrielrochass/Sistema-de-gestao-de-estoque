@@ -20,4 +20,30 @@ O banco de dados utiliza uma única tabela denominada "store", que armazena info
 ## Funcionamento do Código
 O código é estruturado em uma classe principal denominada "Gestao", que gerencia todas as operações relacionadas ao estoque. Ao ser inicializada, a classe estabelece uma conexão com o banco de dados SQLite e verifica se a tabela "store" já existe. Se não existir, a tabela é criada. As operações de inserção e remoção de produtos são realizadas através dos métodos "insert" e "remove", respectivamente.
 
+## Principais comando SQL utilizados:
+1. Remove:
+ ```
+ DELETE FROM table_name WHERE condition;
+ ```
+2. Insert:
+ ```
+INSERT INTO table_name (column1, column2) VALUES (value1, value2);
+ ```
+3. Create table:
+ ```
+ CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    ...
+);
+ ```
+ 4. Select:
+  ```
+ SELECT column1, column2 FROM table_name WHERE condition;
+ ```
+ 5. Order by:
+  ```
+ SELECT * FROM table_name ORDER BY column_name ASC|DESC;
+ ```
+
 

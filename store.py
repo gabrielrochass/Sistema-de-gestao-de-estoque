@@ -25,7 +25,7 @@ class Gestao:
         # dentro das aspas -> nome da tabela, nome das colunas. Fora das aspas -> variaveis
         self.conexao.commit() # salva as alteracoes
 
-    def remove(self, produto, quantidade):
+    def remove(self, produto, quantidade): # remove um produto do estoque 
         cursor = self.conexao.cursor()
         cursor.execute(
             'SELECT quantidade FROM store WHERE produto=?', (produto,))
